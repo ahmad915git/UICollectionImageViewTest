@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  TestProject
 //
-//  Created by Ahmad bin Murad on 30/06/2016.
+//  Created by Alex Lim on 30/06/2016.
 //  Copyright © 2016 Developer. All rights reserved.
 //
 

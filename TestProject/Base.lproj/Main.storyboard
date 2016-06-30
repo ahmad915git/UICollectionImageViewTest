@@ -26,8 +26,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ege-Ke-yNJ">
-                                            <rect key="frame" x="0.0" y="69" width="600" height="452"/>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ege-Ke-yNJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="10" id="Ush-Kd-3yD">
                                                 <size key="itemSize" width="280" height="380"/>
@@ -37,7 +37,7 @@
                                             </collectionViewFlowLayout>
                                             <cells>
                                                 <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Interest Cell" id="lem-Gk-9uR" customClass="interestCollectionViewCell" customModule="TestProject" customModuleProvider="target">
-                                                    <rect key="frame" x="20" y="36" width="280" height="380"/>
+                                                    <rect key="frame" x="20" y="110" width="280" height="380"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                         <rect key="frame" x="0.0" y="0.0" width="280" height="380"/>
@@ -59,7 +59,6 @@
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
-                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="trailing" secondItem="r9l-iD-8lo" secondAttribute="trailing" constant="8" id="06I-fs-Mmi"/>
                                                                         <constraint firstAttribute="bottom" secondItem="r9l-iD-8lo" secondAttribute="bottom" constant="8" id="6Qv-OA-T6m"/>
@@ -67,11 +66,10 @@
                                                                         <constraint firstItem="r9l-iD-8lo" firstAttribute="leading" secondItem="2vk-R2-9ss" secondAttribute="leading" constant="8" id="qtj-9h-cQZ"/>
                                                                     </constraints>
                                                                 </view>
-                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="80" id="0Yf-r9-PaX"/>
                                                                 </constraints>
-                                                                <blurEffect style="extraLight"/>
+                                                                <blurEffect style="light"/>
                                                             </visualEffectView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -86,8 +84,8 @@
                                                         <constraint firstAttribute="bottom" secondItem="mAY-Ux-2kD" secondAttribute="bottom" id="jM1-6t-Wv0"/>
                                                     </constraints>
                                                     <connections>
-                                                        <outlet property="featuredImageView" destination="w9e-26-kvk" id="kv4-Sw-OsX"/>
-                                                        <outlet property="interestTitlelabel" destination="r9l-iD-8lo" id="MYC-jS-9NX"/>
+                                                        <outlet property="featuredImageView" destination="w9e-26-kvk" id="CFS-V2-Emc"/>
+                                                        <outlet property="interestTitlelabel" destination="r9l-iD-8lo" id="bLG-tO-iTu"/>
                                                     </connections>
                                                 </collectionViewCell>
                                             </cells>
@@ -97,6 +95,12 @@
                                             </connections>
                                         </collectionView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ege-Ke-yNJ" firstAttribute="leading" secondItem="YVe-OL-77q" secondAttribute="leading" id="Ead-1x-4nk"/>
+                                        <constraint firstAttribute="bottom" secondItem="ege-Ke-yNJ" secondAttribute="bottom" id="ZYb-uh-uXc"/>
+                                        <constraint firstAttribute="trailing" secondItem="ege-Ke-yNJ" secondAttribute="trailing" id="dh8-Aq-ET2"/>
+                                        <constraint firstItem="ege-Ke-yNJ" firstAttribute="top" secondItem="YVe-OL-77q" secondAttribute="top" id="sea-EU-c37"/>
+                                    </constraints>
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
